@@ -1,11 +1,10 @@
 {
+  "name": "poker-leaderboard",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "start": "node server.js",
-<<<<<<< HEAD
-    "dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-=======
-    "dev": "node server.js"
+    "build": "echo 'Build completed - static files ready'",
+    "start": "echo 'Static site - no start command needed'"
   },
   "dependencies": {
     "@vercel/node": "^5.3.16",
@@ -13,6 +12,5 @@
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "mongoose": "^8.18.0"
->>>>>>> bd16a160115994470e7df76442923a96a9ea89f8
   }
 }
