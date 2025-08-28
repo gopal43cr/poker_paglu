@@ -43,8 +43,8 @@ class PokerLeaderboard {
             this.showLoadingState(true);
             
             const [playersResponse, sessionsResponse] = await Promise.all([
-                fetch('/api/players'),
-                fetch('/api/sessions')
+                fetch('https://poka-poka-ebon.vercel.app/api/players'),
+                fetch('https://poka-poka-ebon.vercel.app/api/sessions')
             ]);
 
             if (!playersResponse.ok || !sessionsResponse.ok) {
@@ -94,7 +94,7 @@ class PokerLeaderboard {
         try {
             this.showLoadingState(true);
             
-            const response = await fetch('/api/game', {
+            const response = await fetch('https://poka-poka-ebon.vercel.app/api/game', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -419,7 +419,7 @@ class PokerLeaderboard {
         }
 
         try {
-            const response = await fetch('/api/clear-all', {
+            const response = await fetch('https://poka-poka-ebon.vercel.app/api/clear-all', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
