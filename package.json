@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "echo 'Build completed - static files ready'",
-    "start": "echo 'Static site - no start command needed'"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
     "@vercel/node": "^5.3.16",
