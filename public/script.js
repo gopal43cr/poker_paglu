@@ -267,7 +267,7 @@ class PokerLeaderboard {
         const allAmounts = this.games.map(g => Math.abs(g.amount || 0));
         const avgPot = allAmounts.length > 0 ? (allAmounts.reduce((a, b) => a + b, 0) / allAmounts.length) : 0;
 
-        document.getElementById('totalGames').textContent = totalGames/3;
+        document.getElementById('totalGames').textContent = Math.floor(totalGames/3);
         document.getElementById('totalPlayers').textContent = totalPlayers;
         document.getElementById('biggestWin').textContent = `$${biggestWin.toFixed(0)}`;
         document.getElementById('avgPot').textContent = `$${avgPot.toFixed(0)}`;
