@@ -86,8 +86,8 @@ class PokerLeaderboard {
             return;
         }
 
-        if (amount <= 0) {
-            this.showNotification('Amount must be greater than 0', 'error');
+        if (amount < 0) {
+            this.showNotification('Amount must be greater than or equal to 0', 'error');
             return;
         }
 
