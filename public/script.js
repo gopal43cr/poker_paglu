@@ -79,7 +79,7 @@ class PokerLeaderboard {
         const playerName = document.getElementById('playerName').value.trim();
         const result = document.getElementById('gameResult').value;
         const amount = parseFloat(document.getElementById('amount').value);
-        const gameType = document.getElementById('gameType').value;
+        const gameType = "Texas hold'em";
 
         if (!playerName || !result || !amount || !gameType) {
             this.showNotification('Please fill in all fields', 'error');
